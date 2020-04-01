@@ -2,11 +2,10 @@ import React from 'react';
 
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
-import ImCustomer from './pages/imCustomer';
-import ImMarketer from './pages/imMarketer';
+import ImCustomer from './pages/ImCustomer';
+import ImMarketer from './pages/ImMarketer';
 import Maintenance from './pages/Maintenance';
 
-import Main from './pages/main';
 
 const Routes = () =>(
     <BrowserRouter>
