@@ -1,9 +1,9 @@
 import React from 'react';
 
-const imCustomer = () => {
+const ImCustomer = () => {
   return (
     <h1>sMerca - Sou Cliente</h1>
   );
 }
 
-export default imCustomer;
+export default ImCustomer;
