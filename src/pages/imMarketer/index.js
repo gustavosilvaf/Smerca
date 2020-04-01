@@ -1,0 +1,7 @@
+import React from 'react';
+
+const imMarketer = () => {
+  return (
+    <h1>sMerca - Sou Mercado</h1>
+  );
+}
