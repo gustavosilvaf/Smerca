@@ -1,0 +1,81 @@
+ @import '../../style-guide.scss';
+
+  %flex {
+    display: flex;
+  }
+  html{
+    justify-content: center;
+  }
+
+ body {
+   font-family: $font-stack;
+   background: $tertiary-color;
+   text-rendering: optimizeLegibility !important;
+   -webkit-font-smoothing: antieliased !important;
+   justify-content: center;
+   width: 100%;
+   max-width: 1800px;
+
+
+ }
+ 
+ .maintenance-container #logo, #container-box,  #container-box div, body, html, #box {
+   min-width: 500px;
+   @extend %flex;
+ }
+
+ #box {
+   margin-top: 50px;
+   width: 80%;
+   margin: auto;
+   border-radius: 10px;
+   padding: 40px;
+   min-width: 600px;
+   
+ }
+
+ .maintenance-container {
+   flex-direction: column;
+   align-content: space-between;
+   
+ }
+
+ .maintenance-container #logo {
+   justify-content: center;
+ }
+
+ .maintenance-container #logo img {
+   width: 400px;
+ }
+
+ #container-box {
+
+  height: 600px;
+   justify-content: space-between;
+   align-items: center;
+ }
+
+ #container-box div {
+   justify-content: left;
+   width: 100%;
+   flex-grow: 0;
+ }
+
+ #container-box .text-area,
+ #container-box .text-area h2 {
+   flex-flow: column;
+   margin: 2px 0;
+   color: $secundary-color;
+ }
+
+ img {
+   width: 100%;
+ }
+ span {
+   color: $primary-color;
+ }
+
+ .title {
+   margin: 5px 0;
+   font-size: 3em;
+ }
