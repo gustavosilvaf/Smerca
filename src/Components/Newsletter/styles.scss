@@ -24,31 +24,9 @@ input[type=submit] {
   border: none;
   justify-content: center;
   &:hover {
-    transition: all 0.2s;
+    transition: all s;
     opacity: 0.8;
   }
 
   
-}
-
-#maitenance-vector {
-  position: relative;
-    left: 0;
-    top: 0;
-    animation: floating 4s infinite;
-}
-
-
-
-@keyframes floating {
-  0% {
-      left: 0; top: 0;
-  }
-  50% {
-      left: 0; top: 20px;
-  }
-  100% {
-    left: 0; top: 0;
-  }
-
 }

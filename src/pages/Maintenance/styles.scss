@@ -79,3 +79,24 @@
    margin: 5px 0;
    font-size: 3em;
  }
+
+
+#maitenance-vector {
+  position: relative;
+    left: 0;
+    top: 0;
+    animation: floating 4s infinite;
+}
+
+@keyframes floating {
+  0% {
+      left: 0; top: 0;
+  }
+  50% {
+      left: 0; top: 20px;
+  }
+  100% {
+    left: 0; top: 0;
+  }
+
+}
