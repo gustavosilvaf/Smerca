@@ -1,32 +1,39 @@
 @import '../../style-guide.scss';
 
-form {
-  margin-top: 20px;
-}
-
-input {
-  width: 400px;
-  padding: 12px;
-  margin: 8px 0;
-  display: flex;
-  border: 1px solid $border-color-box;
-  transition: all 0.3s;
-
-
-  &:focus{
-    border: 1px solid $primary-color;
-  }
-}
-
-input[type=submit] {
-  background-color: $primary-color;
-  color: white;
-  border: none;
-  justify-content: center;
-  &:hover {
-    transition: all s;
-    opacity: 0.8;
-  }
-
+.Newsletter {
   
+  
+  &__label{
+    margin: 5px 0;
+  }
+
+  &__input {
+    height: 40px;
+    padding: 10px 10px;
+    transition: all 0.3s;
+
+    &-text{
+      border: solid 1px #ccc;
+      &:focus{
+        border: solid 1px $primary-color;
+      }
+    }
+
+    &-first{
+      margin-right: 5px;
+    }
+
+    &-button{
+      width: 6em;
+      border: none;
+      color: white;
+      background-color: $primary-color;
+      
+      &:hover {
+        transition: all 0.3s;
+        opacity: 0.8;
+        cursor: pointer;
+      }
+    }
+  }
 }

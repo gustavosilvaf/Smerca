@@ -1,0 +1,18 @@
+@import '../../style-guide.scss';
+
+.SocialIcons {
+  margin-top: 10px;
+
+  &__icon {
+    margin-left: 5px;
+    
+    &:first-child {
+      margin: 0;
+    }
+
+    &:hover {
+      transition: opacity 0.3s;
+      opacity: 0.8;
+    }
+  }
+}
