@@ -1,0 +1,39 @@
+@import '../../style-guide.scss';
+
+.Newsletter {
+  
+  
+  &__label{
+    margin: 5px 0;
+  }
+
+  &__input {
+    height: 40px;
+    padding: 10px 10px;
+    transition: all 0.3s;
+
+    &-text{
+      border: solid 1px #ccc;
+      &:focus{
+        border: solid 1px $primary-color;
+      }
+    }
+
+    &-first{
+      margin-right: 5px;
+    }
+
+    &-button{
+      width: 6em;
+      border: none;
+      color: white;
+      background-color: $primary-color;
+      
+      &:hover {
+        transition: all 0.3s;
+        opacity: 0.8;
+        cursor: pointer;
+      }
+    }
+  }
+}

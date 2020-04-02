@@ -1,0 +1,21 @@
+$font-stack: 'Roboto',
+Helvetica,
+Arial,
+sans-serif;
+
+$primary-color: #009953;
+$secundary-color: #333333;
+$tertiary-color: #fafafa;
+$black: #000;
+$white: #fff;
+$border-color-box: #ccc;
+
+$default-radius: 12px;
+
+* {
+  font-family: $font-stack;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
