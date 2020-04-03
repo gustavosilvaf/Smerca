@@ -1,9 +1,15 @@
 import React from 'react';
-import SocialIcons from '../../Components/SocialIcons';
-import Newsletter from '../../Components/Newsletter';
-import  './styles.scss'
-import { socialIcons } from '../../utils/constants'
 
+import { Provider } from "react-alert";
+import { alertOptions } from '../../utils/constants';
+import AlertTemplate from "react-alert-template-basic";
+
+import Newsletter from '../../Components/Newsletter';
+
+import { socialIcons } from '../../utils/constants'
+import SocialIcons from '../../Components/SocialIcons';
+
+import  './styles.scss'
 
 const Maintenance = () => {
  
@@ -20,7 +26,9 @@ const Maintenance = () => {
           <h1 className="Maitenance__left-box-title">Lamentamos o imprevisto, estamos em manutenção!</h1>
           <h2 className="Maitenance__left-box-subtitle">Atenciosamente,</h2>
           <h2 className="Maitenance__left-box-subtitle">Equipe <span className="Maitenance__left-box-contrast">sMerca</span>.</h2>
-          <Newsletter  />
+          <Provider template={AlertTemplate} {...alertOptions}>
+            <Newsletter  />
+          </Provider>
           <SocialIcons color="#333333" size="2em" socialMedias={socialIcons(ICONS_COLOR, ICONS_SIZE)}/>
         </div>
         <div className="Maitenance__right-box flex flex--all-center ">
