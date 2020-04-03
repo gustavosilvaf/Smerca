@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
+import { positions } from "react-alert";
 
 
 export const socialIcons = (iconColor, iconSize) => [{
@@ -7,11 +8,16 @@ export const socialIcons = (iconColor, iconSize) => [{
   icon: <FaFacebook color={iconColor} size={iconSize} />
 },
 {
-  link: "a",
+  link: "b",
   icon: <FaTwitter color={iconColor} size={iconSize} />
 },
 {
-  link: "a",
+  link: "c",
   icon: <FaInstagram color={iconColor} size={iconSize} />
 }
 ]; 
+
+export const alertOptions = {
+  position: positions.BOTTOM_CENTER,
+  timeout: 5000,
+}
