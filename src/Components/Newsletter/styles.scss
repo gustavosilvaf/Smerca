@@ -1,7 +1,9 @@
 @import '../../style-guide.scss';
 
 .Newsletter {
-  &__label {
+  
+  
+  &__label{
     margin: 5px 0;
   }
 
@@ -10,44 +12,28 @@
     padding: 10px 10px;
     transition: all 0.3s;
 
-    &-text {
+    &-text{
       border: solid 1px #ccc;
-
-      &:focus {
+      &:focus{
         border: solid 1px $primary-color;
       }
     }
 
-    &-first {
+    &-first{
       margin-right: 5px;
     }
 
-    &-button {
+    &-button{
       width: 6em;
       border: none;
       color: white;
       background-color: $primary-color;
-
+      
       &:hover {
         transition: all 0.3s;
         opacity: 0.8;
         cursor: pointer;
       }
-    }
-  }
-}
-
-@media (max-width: $notebook-break-point) {
-  .Newsletter {
-    display: flex;
-    flex-direction: column;
-
-    &__label{
-      margin-top: 10px;
-    }
-
-    &__input {
-      width: 100%;    
     }
   }
 }
