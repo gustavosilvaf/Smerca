@@ -61,7 +61,6 @@
   }
 
 }
-
 @keyframes floating {
   0% {
       left: 0; top: 0;
@@ -73,4 +72,65 @@
     left: 0; top: 0;
   }
 
+}
+
+
+@media (max-width: $notebook-break-point) {
+  .flex {
+    display: flex;
+    flex-direction: column;
+    &--center{
+      justify-content: center;
+      flex-direction: column;
+    }
+    &--all-center {
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+    }
+  }
+
+
+  .Maitenance {
+    width: 100%;
+    height: 100%;
+    background: $tertiary-color;
+    padding: 50px 5px;
+  
+    &__logo {      
+      &-image {
+        margin: auto;
+        width: 80%;
+      }
+    }
+
+    &__main-box {
+      justify-content: space-between;
+      padding: 20px 20px;
+    }
+  
+    &__left-box {
+      &-title {
+        font-size: 2em;
+        color: $black;
+        margin: 10px 0;
+      }
+  
+      &-contrast {
+        color: $primary-color;
+      }
+    }
+  
+    &__right-box {
+  
+      &-image {
+        width: 90%;
+        position: relative;
+        left: 0;
+        right: 0;
+        animation: floating 4s infinite;
+      } 
+    }
+  
+  }
 }
