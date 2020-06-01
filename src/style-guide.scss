@@ -20,4 +20,15 @@ $notebook-break-point: 1024px;
   padding: 0;
   outline: 0;
   box-sizing: border-box;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.Button {
+  font-weight: 800;
+  border-radius: $default-radius;
+  &--white {
+    color: $primary-color;
+    background-color: $white;
+  }
 }

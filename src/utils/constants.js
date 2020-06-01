@@ -21,3 +21,25 @@ export const alertOptions = {
   position: positions.BOTTOM_CENTER,
   timeout: 5000,
 };
+
+export const menuItens = [
+  {
+    name: 'QUEM SOMOS',
+    link: '/#',
+  },
+
+  {
+    name: 'SEJA PARCEIRO',
+    link: '/#',
+  },
+
+  {
+    name: 'FAQs',
+    link: '/#',
+  },
+
+  {
+    name: 'LOJAS',
+    link: '/#',
+  },
+];
