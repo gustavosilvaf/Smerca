@@ -8,8 +8,8 @@ import Home from './pages/Home';
 const Routes = () => (
   <BrowserRouter>
     <Switch>
-      <Route exact path="/maitenance" component={Maintenance} />
-      <Route exact path="/" component={Home} />
+      <Route exact path="/" component={Maintenance} />
+      <Route exact path="/home" component={Home} />
     </Switch>
   </BrowserRouter>
 );

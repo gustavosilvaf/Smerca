@@ -4,14 +4,12 @@ import './styles.scss';
 import { menuItens } from '../../utils/constants';
 
 const TopMenu = () => (
-  <div className="TopMenu">
-    <div className="TopMenu__logoPlace">
-      <img className="TopMenu__logoPace__logo" src="" alt="logo" />
-    </div>
-    <nav className="TopMenu__menuItens">
+  <div className="topMenu">
+    <img className="topMenu__logo" src="" alt="logo" />
+    <nav className="topMenu__nav-container">
       {menuItens.map((item) => (
         <a
-          className="TopMenu__menuItens__item"
+          className="topMenu__item"
           href={item.link}
           key={item.name}
         >
@@ -19,7 +17,7 @@ const TopMenu = () => (
         </a>
       ))}
       <a
-        className="TopMenu__menuItens__button Button Button--white"
+        className="topMenu__button Button Button--white"
         href="/teste"
       >
         ENTRE EM CONTATO

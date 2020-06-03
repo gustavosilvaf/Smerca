@@ -23,6 +23,9 @@ $notebook-break-point: 1024px;
   text-decoration: none;
   transition: all 0.3s;
 }
+body {
+  width: 100%;
+}
 
 .Button {
   font-weight: 800;
@@ -30,5 +33,8 @@ $notebook-break-point: 1024px;
   &--white {
     color: $primary-color;
     background-color: $white;
+  }
+  &:hover {
+    opacity: 80%;
   }
 }
