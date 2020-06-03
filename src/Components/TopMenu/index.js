@@ -12,7 +12,7 @@ const TopMenu = () => (
           {item.name}
         </a>
       ))}
-      <a className="topMenu__button Button Button--white" href="/teste">
+      <a className="topMenu__button Button Button--white" href="/#">
         ENTRE EM CONTATO
       </a>
     </nav>
