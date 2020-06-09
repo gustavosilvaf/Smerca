@@ -1,22 +1,38 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './styles.scss';
 
 import { menuItens } from '../../utils/constants';
 
-const TopMenu = () => (
-  <div className="TopMenu">
-    <img className="TopMenu__logo" src="" alt="logo" />
-    <nav className="TopMenu__nav-container">
-      {menuItens.map((item) => (
-        <a className="TopMenu__item" href={item.link} key={item.name}>
-          {item.name}
+const TopMenu = () => {
+  const [menuStats, setMenuStats] = useState(false);
+
+  const handleClick = () => {
+    if (menuStats) setMenuStats(false);
+    else setMenuStats(true);
+  };
+
+  return (
+    <div className="TopMenu">
+      <img
+        className="TopMenu__menu-button"
+        onClick={handleClick}
+        onKeyDown={handleClick}
+        alt="menu-button"
+        src="/images/icons/menu-icon.png"
+      />
+      <img className="TopMenu__logo" src="/images/logo.svg" alt="logo" />
+      <nav className={`TopMenu__nav-container ${menuStats ? '' : 'inactive'}`}>
+        {menuItens.map((item) => (
+          <a className="TopMenu__item" href={item.link} key={item.name}>
+            {item.name}
+          </a>
+        ))}
+        <a className="TopMenu__button Button Button--white" href="/#">
+          ENTRE EM CONTATO
         </a>
-      ))}
-      <a className="TopMenu__button Button Button--white" href="/#">
-        ENTRE EM CONTATO
-      </a>
-    </nav>
-  </div>
-);
+      </nav>
+    </div>
+  );
+};
 
 export default TopMenu;

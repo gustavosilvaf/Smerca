@@ -5,6 +5,19 @@
   padding: 3em 4em;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+
+  &__menu-button {
+    display: none;
+  }
+  
+  &_nav-container {
+    
+  }
+
+  &__logo{
+    width: 100px;
+  }
 
   &__item {
     color: $white;
@@ -18,5 +31,54 @@
   &__button {
     padding: 1em 3em;
     filter: drop-shadow(0px 0 10px $green-white-dropshadow);
+  }
+}
+
+@media (max-width: $notebook-break-point) {
+  .TopMenu {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    &__menu-button{
+      display: block;
+      position: absolute;
+      top: 1.5em;
+      left: 1em;
+      width: 2em;
+      cursor: pointer;
+    }
+    
+    &__nav-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: $white;
+      width: 100%;
+    
+    }
+
+    &__item {
+      color: $primary-color;
+      padding: 1em 0;
+      font-weight: 300;
+    }
+    
+    &__logo{
+      padding: 0.5em;
+    }
+
+    &__button {
+      border-radius: 0;
+      width: 100%;
+      text-align: center;
+      background-color: $primary-color;
+      color: white;
+      padding: 1em 0;
+      filter: none;
+    }
   }
 }

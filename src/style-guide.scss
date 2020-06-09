@@ -13,7 +13,7 @@ $green-white-dropshadow: #99ffd1;
 
 $default-radius: 12px;
 
-$notebook-break-point: 1024px;
+$notebook-break-point: 1280px;
 
 * {
   font-family: $font-stack;
@@ -22,10 +22,14 @@ $notebook-break-point: 1024px;
   outline: 0;
   box-sizing: border-box;
   text-decoration: none;
-  transition: all 0.3s;
+  transition: all 0.2s ease-in;
 }
 body {
   width: 100%;
+}
+
+.inactive {
+  display: none !important;
 }
 
 .Button {
