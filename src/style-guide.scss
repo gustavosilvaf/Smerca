@@ -9,10 +9,11 @@ $tertiary-color: #fafafa;
 $black: #000;
 $white: #fff;
 $border-color-box: #ccc;
+$green-white-dropshadow: #99ffd1;
 
 $default-radius: 12px;
 
-$notebook-break-point: 1024px;
+$notebook-break-point: 1280px;
 
 * {
   font-family: $font-stack;
@@ -20,4 +21,25 @@ $notebook-break-point: 1024px;
   padding: 0;
   outline: 0;
   box-sizing: border-box;
+  text-decoration: none;
+  transition: all 0.2s ease-in;
+}
+body {
+  width: 100%;
+}
+
+.Inactive {
+  display: none !important;
+}
+
+.Button {
+  font-weight: 800;
+  border-radius: $default-radius;
+  &--white {
+    color: $primary-color;
+    background-color: $white;
+  }
+  &:hover {
+    opacity: 80%;
+  }
 }
