@@ -6,10 +6,7 @@ import { menuItens } from '../../utils/constants';
 const TopMenu = () => {
   const [menuStats, setMenuStats] = useState(false);
 
-  const handleClick = () => {
-    if (menuStats) setMenuStats(false);
-    else setMenuStats(true);
-  };
+  const handleClick = () => setMenuStats(!menuStats)
 
   return (
     <div className="TopMenu">
