@@ -21,7 +21,7 @@ const TopMenu = () => {
         src={menuButton}
       />
       <img className="TopMenu__logo" src={logoWhite} alt="logo" />
-      <nav className={`TopMenu__nav-container ${menuStats ? '' : 'inactive'}`}>
+      <nav className={`TopMenu__nav-container ${menuStats ? '' : 'Inactive'}`}>
         {menuItens.map((item) => (
           <a className="TopMenu__item" href={item.link} key={item.name}>
             {item.name}
