@@ -10,10 +10,15 @@ $black: #000;
 $white: #fff;
 $border-color-box: #ccc;
 $green-white-dropshadow: #99ffd1;
+$bold: 700;
+$z-index-1: 1;
+$z-index-2: 5;
+$z-index-3: 8;
+$z-index-4: 10;
 
 $default-radius: 12px;
 
-$notebook-break-point: 1280px;
+$notebook-break-point: 1240px;
 
 * {
   font-family: $font-stack;
@@ -24,6 +29,7 @@ $notebook-break-point: 1280px;
   text-decoration: none;
   transition: all 0.2s ease-in;
 }
+
 body {
   width: 100%;
 }
