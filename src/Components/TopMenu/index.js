@@ -1,18 +1,21 @@
 import React, { useState } from 'react';
 import './styles.scss';
 
-import logoWhite from '../../assets/images/logo.svg';
+import PropTypes from 'prop-types';
+
+import greenLogo from '../../assets/images/green-logo.svg';
+
 import menuButton from '../../assets/images/icons/menu-icon.png';
 
 import { menuItens } from '../../utils/constants';
 
-const TopMenu = () => {
+const TopMenu = ({ color = 'white' }) => {
   const [menuStats, setMenuStats] = useState(false);
 
   const handleClick = () => setMenuStats(!menuStats);
 
   return (
-    <div className="TopMenu">
+    <div className={`TopMenu TopMenu--${color}`}>
       <img
         className="TopMenu__menu-button"
         onClick={handleClick}
@@ -20,7 +23,7 @@ const TopMenu = () => {
         alt="menu-button"
         src={menuButton}
       />
-      <img className="TopMenu__logo" src={logoWhite} alt="logo" />
+      <img className="TopMenu__logo" src={greenLogo} alt="logo" />
       <nav className={`TopMenu__nav-container${menuStats ? '' : '--inactive'}`}>
         {menuItens.map((item) => (
           <a className="TopMenu__item" href={item.link} key={item.name}>
@@ -33,6 +36,10 @@ const TopMenu = () => {
       </nav>
     </div>
   );
+};
+
+TopMenu.propTypes = {
+  color: PropTypes.string.isRequired,
 };
 
 export default TopMenu;

@@ -1,4 +1,4 @@
-@import '../../style-guide.scss';
+@import "../../style-guide.scss";
 
 .TopMenu {
   z-index: $z-index-2;
@@ -12,19 +12,35 @@
   justify-content: space-between;
   align-items: center;
 
+  &--green {
+    .TopMenu__item {
+      color: $primary-color;
+    }
+  }
+
+  &--white {
+    .TopMenu__item {
+      color: $white;
+    }
+
+    .TopMenu__logo {
+      filter: brightness(0) invert(1);
+    }
+  }
+
   &__menu-button {
     display: none;
   }
-  
-  &__logo{
+
+  &__logo {
     width: 100px;
   }
 
   &__item {
-    color: $white;
+    color: $primary-color;
     padding: 0em 2em;
     font-weight: 800;
-    &:hover{
+    &:hover {
       opacity: 80%;
     }
   }
@@ -37,14 +53,20 @@
 
 @media (max-width: $notebook-break-point) {
   .TopMenu {
+    &--white {
+      .TopMenu__item {
+        color: $primary-color;
+      }
+    }
+    
     width: 100%;
     padding: 0;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-
-    &__menu-button{
+    
+    &__menu-button {
       display: block;
       position: absolute;
       top: 1.5em;
@@ -52,7 +74,7 @@
       width: 2em;
       cursor: pointer;
     }
-    
+
     &__nav-container {
       display: flex;
       flex-direction: column;
@@ -70,8 +92,8 @@
       padding: 1em 0;
       font-weight: 300;
     }
-    
-    &__logo{
+
+    &__logo {
       padding: 0.5em;
     }
 

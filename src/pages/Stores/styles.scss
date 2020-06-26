@@ -1,0 +1,24 @@
+@import '../../style-guide.scss';
+
+.Stores {
+  width: 100vw;
+  height: 100vh;
+  background-color: $light-green-background;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__cep-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__image-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
