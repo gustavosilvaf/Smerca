@@ -1,0 +1,53 @@
+@import "../../style-guide.scss";
+
+.CepInput {
+  display: flex;
+  width: 100%;
+  align-items: center;
+
+  &--center {
+    justify-content: center;
+  }
+
+  &__cep-area {
+    margin: 2em 1em 2em 0;
+    border: none;
+    border-radius: $default-radius;
+    width: 40%;
+    height: 3.2em;
+    padding-left: 1em;
+    filter: drop-shadow(0px 0 10px $green-white-dropshadow);
+    font-size: 1.2em;
+    font-weight: $bold;
+  }
+
+  &__button {
+    font-size: 1em;
+    border: none;
+    font-weight: 900;
+    height: 3.9em;
+    width: 20%;
+    cursor: pointer;
+    filter: drop-shadow(0px 0 10px $green-white-dropshadow);
+  }
+}
+
+@media (max-width: $notebook-break-point) {
+  .CepInput {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    &__cep-area {
+      border-radius: $default-radius;
+      width: 50%;
+      height: 2em;
+    }
+
+    &__button {
+      font-size: 1em;
+      height: 2.5em;
+      width: 5em;
+    }
+  }
+}

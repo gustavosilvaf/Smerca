@@ -4,9 +4,9 @@ import { Provider } from 'react-alert';
 import AlertTemplate from 'react-alert-template-basic';
 import { alertOptions, socialIcons } from '../../utils/constants';
 
-import Newsletter from '../../Components/Newsletter';
+import Newsletter from '../../Components/Maitenance/Newsletter';
 
-import SocialIcons from '../../Components/SocialIcons';
+import SocialIcons from '../../Components/Maitenance/SocialIcons';
 
 import './styles.scss';
 

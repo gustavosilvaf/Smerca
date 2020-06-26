@@ -1,0 +1,50 @@
+@import "../../../style-guide.scss";
+
+.SearchContainer {
+  width: 100vw;
+  height: 75vh;
+  background-color: $light-green-background;
+  color: $primary-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__title {
+    font-size: 3em;
+  }
+
+  &__subtitle {
+    font-size: 1.8em;
+    font-weight: 300;
+  }
+
+  &__cep-container {
+    padding-left: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__image {
+    width: 80%;
+  }
+}
+
+@media (max-width: $notebook-break-point) {
+  .SearchContainer {
+    height: 70vh;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+    &__image-container {
+      display: none;
+    }
+  }
+}

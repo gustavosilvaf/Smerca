@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import { useAlert } from 'react-alert';
 
-import api from '../../Services/api';
+import api from '../../../Services/api';
 
 import './styles.scss';
 
