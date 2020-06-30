@@ -1,0 +1,71 @@
+@import "../../../style-guide.scss";
+
+.StoresByTag {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+
+  &__tag-container {
+    padding: 2em 1em;
+  }
+
+  &__tag-name {
+    margin-top: 1em;
+    text-transform: uppercase;
+    color: $primary-color;
+    font-size: 2rem;
+    font-weight: bolder;
+    filter: $text-drop;
+  }
+
+  &__stores-display {
+    display: flex;
+  }
+
+  &__store-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__store-image-crop {
+    width: 300px;
+
+    margin-bottom: 1em;
+    overflow: hidden;
+  }
+
+  &__store-image {
+    width: 100%;
+    margin-top: 1em;
+    padding: 0.2em;
+    border-radius: $default-radius;
+    filter: brightness(30%) grayscale(100%);
+    &:hover {
+      filter: none;
+      cursor: pointer;
+    }
+  }
+
+  &__store-name {
+    text-align: center;
+    color: $secundary-color;
+    font-size: 1.2em;
+    text-transform: uppercase;
+  }
+}
+
+@media (max-width: $notebook-break-point) {
+  .StoresByTag {
+    &__store-image-crop {
+      width: 100%;
+    }
+
+    &__store-image {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
