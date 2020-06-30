@@ -32,10 +32,18 @@ const Footer = () => (
       </div>
       <div className="Footer__download-container">
         <a className="Footer__download-link" href="home">
-          <img className="Footer__download-button" src={appStore} alt="Botão de download app store" />
+          <img
+            className="Footer__download-button"
+            src={appStore}
+            alt="Botão de download app store"
+          />
         </a>
         <a className="Footer__download-link" href="home">
-          <img className="Footer__download-button" src={googlePlay} alt="Botão de download google play" />
+          <img
+            className="Footer__download-button"
+            src={googlePlay}
+            alt="Botão de download google play"
+          />
         </a>
       </div>
     </div>
