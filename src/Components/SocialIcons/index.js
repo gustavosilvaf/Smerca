@@ -1,19 +1,15 @@
 import React from 'react';
 import './styles.scss';
-import PropTypes from 'prop-types';
+import { socialIcons } from '../../utils/constants';
 
-const SocialIcons = ({ socialMedias }) => (
+const SocialIcons = ({ iconColor, iconSize }) => (
   <div className="SocialIcons">
-    {socialMedias.map((item) => (
+    {socialIcons(iconColor, iconSize).map((item) => (
       <a key={item.link} className="SocialIcons__icon" href={item.link}>
         {item.icon}
       </a>
     ))}
   </div>
 );
-
-SocialIcons.propTypes = {
-  socialMedias: PropTypes.arrayOf(PropTypes.object).isRequired,
-};
 
 export default SocialIcons;

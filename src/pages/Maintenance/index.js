@@ -2,18 +2,13 @@ import React from 'react';
 
 import { Provider } from 'react-alert';
 import AlertTemplate from 'react-alert-template-basic';
-import { alertOptions, socialIcons } from '../../utils/constants';
+import { alertOptions } from '../../utils/constants';
 
 import Newsletter from '../../Components/Maitenance/Newsletter';
-
-import SocialIcons from '../../Components/Maitenance/SocialIcons';
 
 import './styles.scss';
 
 const Maintenance = () => {
-  const ICONS_COLOR = '#333';
-  const ICONS_SIZE = '2.0em';
-
   return (
     <div className="Maitenance">
       <div className="Maitenance__logo flex flex--center">
@@ -36,11 +31,6 @@ const Maintenance = () => {
           <Provider template={AlertTemplate} {...alertOptions}>
             <Newsletter />
           </Provider>
-          <SocialIcons
-            color="#333333"
-            size="2em"
-            socialMedias={socialIcons(ICONS_COLOR, ICONS_SIZE)}
-          />
         </div>
         <div className="Maitenance__right-box flex flex--all-center ">
           <img

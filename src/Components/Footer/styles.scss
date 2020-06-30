@@ -1,0 +1,168 @@
+@import "../../style-guide.scss";
+
+.Footer {
+  background-color: $primary-color;
+  padding: 1em 0;
+  height: 100%;
+
+  &__main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: $max-width;
+    margin: auto;
+    width: 90%;
+  }
+
+  &__logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 20%;
+    padding: 1em;
+  }
+
+  &__logo-slogan {
+    font-size: 0.9em;
+    color: white;
+    text-align: center;
+  }
+
+  &__quick-link-container {
+    padding: 1em 2em;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &__polices {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+  }
+
+  &__link {
+    margin: 5px 0;
+    color: $white;
+
+    &:hover {
+      opacity: 80%;
+    }
+  }
+
+  &__social-container {
+    width: 20%;
+  }
+
+  &__download-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__download-button {
+    width: 80%;
+    margin: 5px 0;
+    &:hover {
+      opacity: 80%;
+    }
+  }
+
+  &__social-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__copy {
+    margin-top: 1em;
+    color: $white;
+  }
+}
+
+@media (max-width: $notebook-break-point) {
+  .Footer {
+    &__main-container {
+      flex-direction: column;
+      width: 100%;
+    }
+
+    &__logo-container {
+      width: 100%;
+    }
+
+    &__logo-slogan {
+      font-size: 1em;
+    }
+
+    &__quick-link-container {
+      padding: 1em 2em;
+      width: 60%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__menu {
+      display: none;
+    }
+
+    &__polices {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    &__social-container {
+      width: 100%;
+    }
+
+    &__download-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__download-button {
+      width: 80%;
+      margin: 5px 0;
+      &:hover {
+        opacity: 80%;
+      }
+    }
+
+    &__social-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    &__copy {
+      text-align: center;
+      margin-top: 1em;
+      color: $white;
+    }
+
+    &__download-link{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

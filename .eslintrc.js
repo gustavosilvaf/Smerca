@@ -34,6 +34,7 @@ module.exports = {
     'import/no-extraneous-dependencies': ['error',  {'devDependencies': true}],
     'react/jsx-props-no-spreading': 'off',
     'import/prefer/default-export' : 'off',
-    'jsx-a11y/no-noninteractive-element-interactions': 'off'
+    'jsx-a11y/no-noninteractive-element-interactions': 'off',
+    "react/prop-types": 0
   },
 };
