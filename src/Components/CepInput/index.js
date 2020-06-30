@@ -1,6 +1,5 @@
 import React from 'react';
 import './styles.scss';
-import PropTypes from 'prop-types';
 
 const CepInput = ({ direction = 'unset' }) => (
   <div className={`CepInput CepInput--${direction}`}>
@@ -10,9 +9,5 @@ const CepInput = ({ direction = 'unset' }) => (
     </button>
   </div>
 );
-
-CepInput.propTypes = {
-  direction: PropTypes.string.isRequired,
-};
 
 export default CepInput;
