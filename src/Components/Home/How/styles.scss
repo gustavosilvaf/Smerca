@@ -1,0 +1,51 @@
+@import "../../../style-guide.scss";
+
+.How {
+  background-color: $primary-color;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3em;
+
+  &__title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__title {
+    color: $white;
+    font-size: 2em;
+  }
+
+  &__subtitle {
+    color: $tertiary-color;
+  }
+
+  &__steps-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    max-width: $max-width;
+  }
+}
+
+@media (max-width: $notebook-break-point) {
+  .How {
+    background-color: $white;
+
+    &__title {
+      color: $primary-color;
+    }
+
+    &__steps-container {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

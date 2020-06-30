@@ -1,0 +1,93 @@
+@import '../../../style-guide.scss';
+
+.Step {
+  width: 200px;
+  &__number {
+    color: $tertiary-color;
+    font-size: 3em;
+    margin: 0.5em 0.3em -0.2em;
+    font-weight: $bold;
+  }
+
+  &__content {
+    background-color: rgba($color: $tertiary-color, $alpha: 0.4);
+    border-radius: $default-radius;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.6em;
+    height: 300px;
+  }
+
+  &__image-container {
+    background-color: $white;
+    border-radius: $default-radius;
+    margin: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+  }
+
+  &__image {
+    width: 80%;
+  }
+
+  &__title {
+    color: $white;
+    text-align: center;
+    font-size: 0.8em;
+    margin: 5px;
+
+  }
+
+  &__description {
+    font-size: 0.8em;
+    margin: 1em 0;
+    color: $white;
+    text-align: center;
+  }
+}
+
+@media (max-width: $notebook-break-point) {
+  .Step {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__number {
+      background-color: rgba($color: $primary-color, $alpha: 0.6);
+      padding: 0.3em 0.6em;
+      border-radius: $default-radius;
+      color: $white;
+      margin: 0;
+    }
+  
+    &__content {
+      background-color: $white;
+      height: 100%;
+    }
+  
+    &__image-container {
+      display: none;
+    }
+  
+    &__image {
+      display: none;
+    }
+  
+    &__title {
+      color: $primary-color;
+      font-size: 1em;
+      margin: 0;
+    }
+  
+    &__description {
+      font-size: 1em;
+      margin: 1em 0;
+      color: $secundary-color;
+    }
+  }
+}
