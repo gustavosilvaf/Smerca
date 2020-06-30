@@ -1,0 +1,146 @@
+@import "../../../style-guide.scss";
+
+.About {
+  width: 90%;
+  margin: auto;
+  padding-bottom: 1em;
+  max-width: $max-width;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  &__main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    filter: $text-drop;
+  }
+
+  &__text-container {
+    width: 60%;
+  }
+
+  &__image-container {
+    width: 70%;
+  }
+
+  &__text {
+    margin-top: 2em;
+    font-weight: $bold;
+  }
+
+  &__download-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__download-text-container {
+    width: 100%;
+    margin-right: 4em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  &__download-button-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  &__download-text {
+    font-size: 3em;
+    text-transform: uppercase;
+    &--green {
+      color: $primary-color;
+    }
+  }
+
+  &__button {
+    background-color: $primary-color;
+    color: $white;
+    width: 60%;
+    text-align: center;
+    padding: 0.5em 0;
+    margin: 5px;
+    font-weight: $bold;
+    border-radius: $default-radius;
+
+    &:hover {
+      opacity: 80%;
+    }
+  }
+}
+
+@media (max-width: $notebook-break-point) {
+  .About {
+    width: 90%;
+    margin: auto;
+    max-width: $max-width;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    &__main-container {
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    &__text-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    &__logo {
+      filter: $text-drop;
+    }
+
+    &__text {
+      width: 100%;
+      font-weight: lighter;
+      text-align: center;
+    }
+
+    &__image-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__image {
+      width: 100%;
+    }
+
+    &__download-container {
+      width: 100%;
+      flex-direction: column;
+    }
+
+    &__download-text-container {
+      margin-right: 0;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__download-button-container {
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
