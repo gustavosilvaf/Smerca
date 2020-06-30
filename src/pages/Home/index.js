@@ -5,6 +5,7 @@ import NearbyMarkets from '../../Components/Home/NearbyMarkets';
 import Footer from '../../Components/Footer';
 import About from '../../Components/Home/About';
 import How from '../../Components/Home/How';
+import RegisterStore from '../../Components/Home/RegisterStore';
 
 const Home = () => (
   <div className="Home">
@@ -12,6 +13,7 @@ const Home = () => (
     <NearbyMarkets />
     <About />
     <How />
+    <RegisterStore />
     <Footer />
   </div>
 );
