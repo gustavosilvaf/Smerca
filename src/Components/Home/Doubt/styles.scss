@@ -1,0 +1,58 @@
+@import "../../../style-guide.scss";
+
+.Doubt {
+  width: 100%;
+  background-color: rgba($color: $primary-color, $alpha: 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2em;
+
+  &__title {
+    color: $primary-color;
+    font-size: 2em;
+    filter: $text-drop;
+  }
+
+  &__main-container {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__button {
+    color: $white;
+    background-color: $primary-color;
+    padding: 1em 3em;
+    border-radius: $default-radius;
+    text-transform: uppercase;
+    font-weight: $bold;
+
+    &:hover {
+      opacity: 80%;
+    }
+  }
+}
+
+@media (max-width: $notebook-break-point) {
+  .Doubt {
+    width: 100%;
+
+    padding: 2em 1em;
+
+    &__title {
+      text-align: center;
+    }
+
+    &__image {
+      width: 80%;
+    }
+
+    &__main-container {
+      width: 100%;
+      flex-direction: column;
+    }
+  }
+}
