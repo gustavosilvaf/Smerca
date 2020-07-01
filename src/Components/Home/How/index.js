@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles.scss';
-import Step from '../Step';
+import Step from '../../Step';
 import stepOne from '../../../assets/images/vectors/stepone.svg';
 import stepTwo from '../../../assets/images/vectors/steptwo.svg';
 import stepThree from '../../../assets/images/vectors/stepthree.svg';

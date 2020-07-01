@@ -2,7 +2,7 @@ import React from 'react';
 import './styles.scss';
 import registerImage from '../../../assets/images/vectors/register.svg';
 
-const RegisterStore = () => (
+const RegisterStoreContainer = () => (
   <div className="RegisterStore">
     <h3 className="RegisterStore__title">CADASTRE SUA LOJA</h3>
     <p className="RegisterStore__description">
@@ -21,4 +21,4 @@ const RegisterStore = () => (
   </div>
 );
 
-export default RegisterStore;
+export default RegisterStoreContainer;

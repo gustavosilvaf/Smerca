@@ -5,7 +5,7 @@ import NearbyMarkets from '../../Components/Home/NearbyMarkets';
 import Footer from '../../Components/Footer';
 import About from '../../Components/Home/About';
 import How from '../../Components/Home/How';
-import RegisterStore from '../../Components/Home/RegisterStore';
+import RegisterStoreContainer from '../../Components/Home/RegisterStoreContainer';
 import Doubt from '../../Components/Home/Doubt';
 import Contact from '../../Components/Home/Contact';
 
@@ -15,7 +15,7 @@ const Home = () => (
     <NearbyMarkets />
     <About />
     <How />
-    <RegisterStore />
+    <RegisterStoreContainer />
     <Doubt />
     <Contact />
     <Footer />
