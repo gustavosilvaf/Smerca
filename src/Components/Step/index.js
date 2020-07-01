@@ -9,7 +9,7 @@ const Step = ({ number, title, description, image }) => (
         <img className="Step__image" src={image} alt={title} />
       </div>
       <h6 className="Step__title">{title}</h6>
-      <p className="Step__description">{description}</p>
+      {description ? <p className="Step__description">{description}</p> : ''}
     </div>
   </div>
 );

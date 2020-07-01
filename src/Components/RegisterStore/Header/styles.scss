@@ -2,7 +2,7 @@
 
 .Header {
   width: 100%;
-  height: 70vh;
+  height: 80vh;
   max-width: $max-width; 
   display: flex;
   flex-direction: column;
@@ -86,10 +86,6 @@
     &__main-container {
       flex-direction: column;
     }
-
-    &__image-container {
-    }
-
     &__image {
       margin-top: 6em;
       width: 80%;
