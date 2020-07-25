@@ -4,7 +4,7 @@ import logoGreen from '../../../assets/images/green-logo.svg';
 import mockup from '../../../assets/images/mockup.png';
 
 const About = () => (
-  <div className="About">
+  <div className="About" id="who-we-are">
     <div className="About__main-container">
       <div className="About__text-container">
         <img className="About__logo" src={logoGreen} alt="Logo" />

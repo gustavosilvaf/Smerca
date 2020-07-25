@@ -25,12 +25,12 @@ export const alertOptions = {
 export const menuItens = [
   {
     name: 'QUEM SOMOS',
-    link: '/#',
+    link: '/#who-we-are',
   },
 
   {
     name: 'SEJA PARCEIRO',
-    link: '/#',
+    link: '/register-store',
   },
 
   {
@@ -40,6 +40,6 @@ export const menuItens = [
 
   {
     name: 'LOJAS',
-    link: '/#',
+    link: '/stores',
   },
 ];
