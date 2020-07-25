@@ -40,13 +40,13 @@
 }
 
 @media (max-width: $notebook-break-point) {
-  .RegisterStore {
+  .RegisterStoreContainer {
     &__description {
       width: 80%;
     }
 
     &__image {
-      width: 70%;
+      width: 60%;
       height: auto;
     }
   }
