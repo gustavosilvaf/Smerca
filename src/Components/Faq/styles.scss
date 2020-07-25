@@ -1,0 +1,45 @@
+@import "../../style-guide.scss";
+
+.Faq {
+  display: flex;
+  flex-direction: column;
+
+  &__accordion {
+    background-color: $white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: background-color 0.6s;
+    border-radius: $default-radius;
+    font-size: 1.5em;
+    margin: 1em;
+    font-weight: 300;
+    filter: drop-shadow(0.2em 0.2em 3px $tertiary-color);
+
+    &--active,
+    &:hover {
+      background-color: $tertiary-color;
+    }
+  }
+
+  &__description-container {
+    overflow: hidden;
+    transition: max-height 0.6 ease;
+  }
+
+  &__description {
+   padding-left: 3em; 
+  }
+}
+
+@media (max-width: $notebook-break-point) {
+  .Faq {
+    &__accordion {
+      margin: 1em 0;
+    }
+  }
+
+}

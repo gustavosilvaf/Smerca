@@ -1,0 +1,40 @@
+@import '../../../style-guide.scss';
+
+.StoresFaq {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+  background: url('../../../assets/images/background-contact.svg');
+  
+  &__subtitle {
+    font-size: 1.2em;
+    font-weight: 900;
+    z-index: $z-index-2;
+  }
+
+  &__title {
+    color: $primary-color;
+    font-size: 2.5em;
+    z-index: $z-index-1;
+    filter: $text-drop;
+  }
+
+  &__main-container {
+    width: 60%;
+  }
+}
+
+@media (max-width: $notebook-break-point) {
+  .StoresFaq {
+    padding: 2em;
+
+    &__title {
+      text-align: center;
+    }
+    &__main-container {
+      width: 100%;
+    }
+  }
+}
