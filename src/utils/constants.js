@@ -25,7 +25,7 @@ export const alertOptions = {
 export const menuItens = [
   {
     name: 'QUEM SOMOS',
-    link: '/#who-we-are',
+    link: '/',
   },
 
   {
@@ -35,7 +35,7 @@ export const menuItens = [
 
   {
     name: 'FAQs',
-    link: '/#',
+    link: '/faqs',
   },
 
   {

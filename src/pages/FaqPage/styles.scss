@@ -1,0 +1,72 @@
+@import '../../style-guide.scss';
+
+.FaqPage {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3em;
+
+  &__first-container {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__text-container {
+    padding-left: 4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+  }
+
+  &__title {
+    font-size: 4em;
+    font-weight: 800;
+    color: $primary-color;
+  }
+
+  &__subtitle {
+    font-size: 2em;
+  }
+
+  
+
+  &__image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+  }
+
+  &__image {
+    height: 20vh;
+  }
+
+  &__faq-container {
+    width: 60%;
+    background: url('../../assets/images/background-contact.svg');
+  }
+}
+
+@media (max-width: $notebook-break-point) {
+
+  .FaqPage {
+    padding: 1em;
+    &__title {
+      font-size: 2em;
+    }
+    &__subtitle {
+      font-size: 1em;
+    }
+
+    &__faq-container {
+      width: 100%;
+    }
+  }
+
+}
