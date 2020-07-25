@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './styles.scss';
+import { Link } from 'react-router-dom';
 
 import PropTypes from 'prop-types';
 
@@ -26,9 +27,9 @@ const TopMenu = ({ color = 'white' }) => {
       <img className="TopMenu__logo" src={greenLogo} alt="logo" />
       <nav className={`TopMenu__nav-container${menuStats ? '' : '--inactive'}`}>
         {menuItens.map((item) => (
-          <a className="TopMenu__item" href={item.link} key={item.name}>
+          <Link className="TopMenu__item" to={item.link} key={item.name}>
             {item.name}
-          </a>
+          </Link>
         ))}
         <a className="TopMenu__button Button Button--white" href="/#">
           ENTRE EM CONTATO
