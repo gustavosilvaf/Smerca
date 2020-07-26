@@ -94,6 +94,7 @@
 
 @media (max-width: $notebook-break-point) {
   .Footer {
+    padding: 1em;
     &__main-container {
       flex-direction: column;
       width: 100%;
