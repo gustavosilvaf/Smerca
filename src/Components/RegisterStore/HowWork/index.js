@@ -14,10 +14,10 @@ const HowWork = () => (
       e mensalidades. Só recebemos se você receber muito mais!!
     </p>
     <div className="HowWork__steps-container">
-      <Step title="Sistema de gestão integrado" image={StepOneStore} />
-      <Step title="Escolha onde atuar" image={StepTwoStore} />
-      <Step title="Aumente sua visibilidade" image={StepThreeStore} />
-      <Step title="Potencialize seu faturamento" image={StepFourStore} />
+      <Step number="1" title="Sistema de gestão integrado" image={StepOneStore} color='green' />
+      <Step number="2" title="Escolha onde atuar" image={StepTwoStore}  color='green'/>
+      <Step number="3" title="Aumente sua visibilidade" image={StepThreeStore}  color='green'/>
+      <Step number="4" title="Potencialize seu faturamento" image={StepFourStore}  color='green'/>
     </div>
   </div>
 );
