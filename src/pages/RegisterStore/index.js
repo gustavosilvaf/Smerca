@@ -5,11 +5,13 @@ import HowWork from '../../Components/RegisterStore/HowWork';
 import StoresFaq from '../../Components/RegisterStore/StoreFaq';
 
 const RegisterStore = () => (
-  <div className="RegisterStore">
-    <Header />
-    <HowWork />
-    <StoresFaq />
-  </div>
+  <>
+    <div className="RegisterStore">
+      <Header />
+      <HowWork />
+      <StoresFaq />
+    </div>
+  </>
 );
 
 export default RegisterStore;
