@@ -63,6 +63,7 @@
   .StoresByTag {
     &__store-image-crop {
       width: 100%;
+      height: 100%;
     }
 
     &__store-image {
@@ -73,11 +74,15 @@
     &__tag-container{
       display: flex;
       flex-direction: column;
-      align-items: center;
     }
 
     &__store-container {
       margin-right: 0;
+    }
+
+    &__store-image {
+      width: 100%;
+      height: 6em;
     }
   }
 }
