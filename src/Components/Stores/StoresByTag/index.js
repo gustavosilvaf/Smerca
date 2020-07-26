@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import api from '../../../Services/api';
 import './styles.scss';
-import Slider from "react-slick";
+import Slider from 'react-slick';
 
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 const StoresByTag = () => {
   const [stores, setStores] = useState([]);
@@ -31,11 +31,7 @@ const StoresByTag = () => {
       {stores.map((storeTag) => (
         <div key={storeTag.id} className="StoresByTag__tag-container">
           <h3 className="StoresByTag__tag-name">{storeTag.content}</h3>
-          <Slider 
-          className="StoresByTag__stores-display"
-          dots={true}
-          slidesToShow={3}
-          >
+          <Slider className="StoresByTag__stores-display" dots slidesToShow={3}>
             {storeTag.markets.data.markets.map((store) => (
               <div key={store.id} className="StoresByTag__store-container">
                 <div className="StoresByTag__store-image-crop">

@@ -9,7 +9,8 @@ const Doubt = () => (
     <div className="Doubt__main-container">
       <img className="Doubt__image" src={doubtImage} alt="Homem com dúvida" />
       <a className="Doubt__button" href="home">
-        Perguntas frequentes <img className="Doubt__chevron" src={doubleChevron} alt="Setas"/>
+        Perguntas frequentes{' '}
+        <img className="Doubt__chevron" src={doubleChevron} alt="Setas" />
       </a>
     </div>
   </div>

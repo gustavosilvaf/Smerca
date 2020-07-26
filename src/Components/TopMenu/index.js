@@ -9,7 +9,6 @@ import greenLogo from '../../assets/images/green-logo.svg';
 import greenMenuButton from '../../assets/images/icons/green-menu-button.png';
 import whiteMenuButton from '../../assets/images/icons/white-menu-button.png';
 
-
 import { menuItens } from '../../utils/constants';
 
 const TopMenu = ({ color = 'white' }) => {
@@ -24,7 +23,7 @@ const TopMenu = ({ color = 'white' }) => {
         onClick={handleClick}
         onKeyDown={handleClick}
         alt="menu-button"
-        src={color === "green" ? greenMenuButton : whiteMenuButton}
+        src={color === 'green' ? greenMenuButton : whiteMenuButton}
       />
       <img className="TopMenu__logo" src={greenLogo} alt="logo" />
       <nav className={`TopMenu__nav-container${menuStats ? '' : '--inactive'}`}>
