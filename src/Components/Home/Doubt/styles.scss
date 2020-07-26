@@ -23,6 +23,8 @@
   }
 
   &__button {
+    display: flex;
+    align-items: center;
     color: $white;
     background-color: $primary-color;
     padding: 1em 3em;
@@ -33,6 +35,10 @@
     &:hover {
       opacity: 0.8;
     }
+  }
+
+  &__chevron {
+    padding-left: 1em;
   }
 }
 
@@ -53,6 +59,17 @@
     &__main-container {
       width: 100%;
       flex-direction: column;
+    }
+
+    &__button {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      padding: 1em;
+    }
+
+    &__chevron {
+      padding-left: 0.5em;
     }
   }
 }
