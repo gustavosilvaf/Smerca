@@ -1,9 +1,24 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './styles.scss';
+import api from '../../../Services/api';
 import Faq from '../../Faq';
 import Footer from '../../Footer';
 
 const StoresFaq = () => {
+  const [faqs, setFaqs] = useState([]);
+
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const faqResponse = await api.get('faq');
+      const { faq } = faqResponse.data;
+      setFaqs(faq);
+    };
+
+    fetchData();
+  }, []);
+
+
   return (
     <>
       <div className="StoresFaq">
